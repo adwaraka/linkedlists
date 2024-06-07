@@ -11,6 +11,11 @@ def main():
     for val in inputArr:
     	singlell.insertEnd(val)
     singlell.displayLinkedList()
+    dataDel = inputArr[random.choice(range(1, 7))]
+    singlell.deleteNode(dataDel)
+    singlell.deleteNode(-10) # outside of range(100)
+    print()
+    singlell.displayLinkedList()
 
 
 if __name__ == "__main__":
