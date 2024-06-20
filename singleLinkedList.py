@@ -34,6 +34,22 @@ class SingleLinkedList(object):
             else:
                 print("{} not found.".format(data))
 
+    def deleteNthNode(self, n):
+        print("Deleting {} node from the end".format(n))
+        slow, current = self.head, self.head
+        while n>0:
+            current = current.next
+            n-=1
+        while current:
+            current = current.next
+            slow = slow.next
+        print("Deleting {}".format(slow.data))
+        prev = self.head
+        while prev.next != slow:
+            prev = prev.next
+        prev.next = slow.next
+        self.displayLinkedList()
+
     def displayLinkedList(self):
         current = self.head
         while current:
