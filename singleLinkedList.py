@@ -55,3 +55,13 @@ class SingleLinkedList(object):
         while current:
             print(current.data)
             current = current.next
+
+    def reverseLinkedList(self):
+        current = self.head
+        prev = None
+        while current:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev

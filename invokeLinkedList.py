@@ -20,6 +20,10 @@ def main():
     singlell.displayLinkedList()
     print()
     singlell.deleteNthNode(2)
+    print()
+    singlell.reverseLinkedList()
+    print()
+    singlell.displayLinkedList()
 
 
 if __name__ == "__main__":
