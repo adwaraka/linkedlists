@@ -9,7 +9,7 @@ def main():
     amount = 15
     inputArr = [random.choice(L) for _ in range(amount)]
     for val in inputArr:
-    	singlell.insertEnd(val)
+        singlell.insertEnd(val)
     singlell.displayLinkedList()
     dataDel = inputArr[random.choice(range(1, 7))]
     print()
