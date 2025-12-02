@@ -1,8 +1,10 @@
+from typing import Optional
+
 class Node(object):
 
     def __init__(self, data: int):
         self.data = data
-        self.pointer = None
+        self.pointer: Optional['Node'] = None
 
 
 class SingleLinkedList(object):
