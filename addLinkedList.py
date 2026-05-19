@@ -43,16 +43,13 @@ def addTwoLinkedListAndPrint(ptr1, ptr2):
 
 
 ll1 = Linkedlist()
-ll1.insert(4)  # Represents 1,2,3,4 sequentially (4 -> 3 -> 2 -> 1)
-ll1.insert(3)
-ll1.insert(2)
+ll1.insert(1)
 ll1.insert(1)
 
 ll2 = Linkedlist()
-ll2.insert(8)  # Represents 5,6,7,8 sequentially (8 -> 7 -> 6 -> 5)
-ll2.insert(7)
-ll2.insert(6)
-ll2.insert(5)
+ll2.insert(0)
+ll2.insert(9)
+ll2.insert(9)
 
 # Add them together (in-place mutating ll1)
 ll1.head = addTwoLinkedListAndPrint(ll1.head, ll2.head)
